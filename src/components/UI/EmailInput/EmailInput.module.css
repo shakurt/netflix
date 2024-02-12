@@ -1,0 +1,156 @@
+.form-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 470px;
+	gap: 0.7rem;
+}
+
+.form-section > div:nth-of-type(1) {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.input-container {
+	position: relative;
+	width: 100%;
+}
+
+.form-section input {
+	width: 100%;
+	padding-inline: 0.3rem;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	font-size: 1rem;
+	text-align: left !important;
+}
+
+.form-section .placeholder {
+	position: absolute;
+	left: 0.3rem;
+	top: 50%;
+	color: grey;
+	transform: translateY(-50%);
+	z-index: 2;
+	font-size: 0.9rem;
+	transition: all 0.15s ease-in-out;
+}
+
+/* FOR ACTIVE PLACEHOLDER */
+.form-section p.active {
+	font-size: 0.75rem;
+	top: 0;
+	transform: translateY(1px);
+}
+
+.form-section .message {
+	color: #ffa00a;
+	align-self: flex-start;
+	font-size: 0.85rem;
+	font-weight: 300;
+	margin-top: 0.5rem;
+}
+
+.form-section > button {
+	background-color: red;
+	font-size: 1rem;
+	border: none;
+	color: white;
+	padding-inline: 0.9rem;
+	height: 40px;
+	border-radius: 3px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-section > button > span {
+	display: flex;
+}
+
+.form-section > button:hover {
+	background-color: rgb(228, 0, 0);
+	transform: scale(1.05);
+}
+
+@media (min-width: 550px) {
+	.form-section .message {
+		font-size: 1rem;
+		margin-top: 0.7rem;
+	}
+	.form-section {
+		gap: 0.5rem;
+	}
+	.form-section input {
+		font-size: 1.15rem;
+		padding-inline: 0.3rem;
+		padding-top: 1.3rem;
+		padding-bottom: 0.5rem;
+	}
+	.form-section .placeholder {
+		font-size: 1rem;
+	}
+	.form-section p.active {
+		font-size: 0.8rem;
+	}
+	.form-section > button {
+		padding: 0.6rem 0.9rem;
+	}
+}
+
+@media (min-width: 950px) {
+	.form-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		max-width: 650px;
+		gap: 0rem;
+		margin-block: 2rem;
+	}
+
+	.form-section input {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		height: 55px;
+	}
+
+	.form-section > button {
+		height: 56px;
+		border-radius: 5px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		width: 240px;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+	.form-section > button:hover {
+		transform: scale(1);
+	}
+}
+
+@media (min-width: 1450px) {
+	.form-section {
+		max-width: 750px;
+	}
+
+	.form-section input {
+		height: 65px;
+	}
+
+	.form-section > button {
+		height: 66px;
+	}
+	.form-section .message {
+		font-size: 1.2rem;
+	}
+}

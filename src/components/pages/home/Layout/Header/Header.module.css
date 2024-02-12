@@ -1,0 +1,119 @@
+.home-header {
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.7) 5%,
+			rgba(0, 0, 0, 0.5) 50%,
+			rgba(0, 0, 0, 0.7) 95%
+		),
+		url("../../../../../assets/images/movies-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	color: white;
+}
+
+.persian-header h2,
+.persian-header p {
+	text-align: center;
+}
+
+/* CONTAINER */
+.header-container {
+	padding-block: 1.5rem;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-nav {
+	width: 85px;
+}
+
+.right-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.right-nav .sign-in {
+	color: white;
+	background-color: red;
+	border-radius: 5px;
+	padding: 0.4rem 0.5rem;
+	border: none;
+	cursor: pointer;
+}
+
+/* HERO */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 4rem;
+	gap: 1rem;
+}
+
+.hero > h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.hero > p:nth-of-type(1),
+.hero > p:nth-of-type(2) {
+	width: 300px;
+}
+
+@media (min-width: 550px) {
+	.left-nav {
+		width: 100px;
+	}
+	.right-nav select option {
+		font-size: 1rem;
+	}
+
+	.right-nav .sign-in,
+	.select-section {
+		padding: 0.6rem 0.8rem;
+		font-size: 1rem;
+	}
+
+	.hero {
+		gap: 2rem;
+	}
+
+	.hero > h2 {
+		font-size: 3rem;
+		width: 500px;
+	}
+
+	.hero > p:nth-of-type(1),
+	.hero > p:nth-of-type(2) {
+		font-size: 1.3rem;
+		width: 500px;
+	}
+}
+
+@media (min-width: 1450px) {
+	.left-nav {
+		width: 170px;
+	}
+	.hero > h2 {
+		margin-top: 4rem;
+		font-size: 4rem;
+		width: 700px;
+	}
+
+	.hero > p:nth-of-type(1),
+	.hero > p:nth-of-type(2) {
+		width: 800px;
+	}
+
+	.hero > p:nth-of-type(1) {
+		font-size: 1.75rem;
+	}
+}

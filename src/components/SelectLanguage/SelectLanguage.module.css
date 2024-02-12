@@ -1,0 +1,81 @@
+.select {
+	border: 1px solid white;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.select-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.5rem;
+	width: 65px;
+	height: 28px;
+	padding-inline: 2.8rem;
+	position: relative;
+}
+
+.icon {
+	font-size: 1rem;
+	display: flex;
+}
+
+.select-container > p {
+	font-size: 0.8rem;
+}
+
+.select-languages-list {
+	list-style-type: none;
+	text-align: center;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	left: -1.5%;
+	width: 92px;
+	display: none;
+}
+
+.select-languages-list li {
+	padding-block: 0.3rem;
+	width: 100%;
+	border: 1px solid white;
+	cursor: pointer;
+	background-color: rgba(40, 40, 40, 0.827);
+	font-weight: 300;
+}
+
+.select-languages-list li:hover {
+	background-color: red;
+	color: white;
+}
+
+.select-languages-list li:nth-of-type(2) {
+	border-top: none;
+	font-size: 0.85rem;
+}
+
+.select.active .select-languages-list {
+	display: block;
+}
+
+@media (min-width: 550px) {
+	.select-container {
+		height: 38px;
+	}
+
+	.select-container > p {
+		font-size: 0.9rem;
+	}
+
+	.select-languages-list li {
+		font-size: 0.9rem;
+		font-weight: 400;
+	}
+}
+@media (min-width: 950px) {
+}
+@media (min-width: 1450px) {
+}

@@ -1,0 +1,156 @@
+/* MAIN */
+.main {
+	background-color: rgb(22, 22, 22);
+	color: var(--white);
+	padding-top: 1rem;
+}
+
+.main-container {
+}
+
+.title-section {
+	padding-block: 1.5rem;
+	border-bottom: 2px solid white;
+	border-radius: 6px;
+}
+
+.title-section > h2 {
+	margin-bottom: 0.5rem;
+}
+
+.title-section > p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	width: 300px;
+}
+
+.movie-section {
+}
+
+.movies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.movie {
+	flex-basis: 300px;
+	margin-block: 3.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+
+.movie:hover {
+	transform: scale(1.2);
+}
+
+.poster {
+	width: 200px;
+	height: 230px;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 5px 5px 30px 3px rgba(255, 0, 0, 0.2);
+}
+
+.title > * {
+	color: var(--white);
+	text-decoration: none;
+	font-size: 1rem;
+	display: flex;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	-webkit-text-stroke-width: 0.65px;
+	-webkit-text-stroke-color: var(--red);
+}
+
+.comming {
+	color: var(--white);
+	background-color: var(--red);
+	font-weight: bold;
+	position: absolute;
+	top: 3%;
+	left: 5%;
+	transform: rotate(-45deg);
+	font-size: 0.75rem;
+	padding: 0.15rem 0.3rem;
+	border-radius: 50px;
+}
+
+@media (min-width: 550px) {
+	.title-section > h2 {
+		font-size: 2rem;
+	}
+
+	.title-section > p {
+		font-size: 1rem;
+		width: 500px;
+	}
+	.movie {
+		flex-basis: 350px;
+	}
+	.poster {
+		width: 220px;
+		height: 280px;
+		box-shadow: 5px 5px 30px 3px rgba(255, 0, 0, 0.3);
+	}
+	.title > * {
+		font-size: 1.3rem;
+	}
+	.comming {
+		left: 9%;
+		top: 3%;
+	}
+}
+
+@media (min-width: 950px) {
+	.title-section {
+		padding-block: 4rem;
+	}
+
+	.title-section > h2 {
+		margin-bottom: 0.6rem;
+		font-size: 2.3rem;
+	}
+
+	.title-section > p {
+		font-size: 1.2rem;
+		line-height: 1.75;
+		width: 500px;
+	}
+	.movie {
+		flex-basis: 350px;
+	}
+	.poster {
+		width: 240px;
+		height: 300px;
+		box-shadow: 5px 5px 30px 3px rgba(255, 0, 0, 0.3);
+	}
+	.comming {
+		left: 7%;
+		top: 3%;
+	}
+}
+
+@media (min-width: 1450px) {
+	.title-section {
+		padding-block: 6rem;
+	}
+
+	.title-section > h2 {
+		margin-bottom: 0.7rem;
+		font-size: 2.4rem;
+	}
+
+	.title-section > p {
+		font-size: 1.3rem;
+		width: 600px;
+	}
+	.movie {
+		flex-basis: 25%;
+	}
+}

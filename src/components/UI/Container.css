@@ -1,0 +1,13 @@
+.container {
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.englishFont {
+	font-family: "Noto Sans", sans-serif !important;
+}
+
+.persianFont * {
+	font-family: Vazirmatn, sans-serif;
+}

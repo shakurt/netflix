@@ -1,0 +1,134 @@
+.input-section {
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.input {
+	margin: auto;
+	background-color: var(--input-bg);
+	border: none;
+	height: 36px;
+	padding-left: 1rem;
+	width: 90%;
+	border-radius: 4px;
+	color: white;
+	font-size: 0.8rem;
+}
+
+.show {
+	color: white;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: var(--grey-text);
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 15%;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+	font-family: inherit;
+	border: none;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+.placeholder {
+	position: absolute;
+	left: 10%;
+	top: 29.5%;
+	transform: translate(-50%);
+	color: var(--grey-text);
+	width: 10px;
+	font-size: 0.65rem;
+	transition: all 0.1s ease-in-out;
+}
+
+.input.active-bg {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.input.active-bg ~ .show {
+	background-color: var(--black);
+	border-radius: 0;
+}
+
+.input.active + .placeholder {
+	top: 3%;
+	font-size: 0.5rem;
+}
+
+@media (min-width: 550px) {
+	.input {
+		height: 40px;
+		font-size: 0.9rem;
+	}
+
+	.show {
+		height: 40px;
+		font-size: 0.7rem;
+	}
+	.placeholder {
+		left: 8%;
+		top: 29.5%;
+		font-size: 0.75rem;
+	}
+
+	.placeholder.active {
+		left: 6.8%;
+		top: 3%;
+		font-size: 0.6rem;
+	}
+}
+@media (min-width: 950px) {
+	.input {
+		height: 42px;
+		font-size: 1rem;
+	}
+
+	.show {
+		height: 42px;
+		font-size: 0.8rem;
+	}
+
+	.placeholder {
+		left: 8%;
+		top: 25%;
+		font-size: 0.85rem;
+	}
+
+	.placeholder.active {
+		left: 6.8%;
+		top: -3%;
+		font-size: 0.7rem;
+	}
+}
+@media (min-width: 1450px) {
+	.input {
+		height: 50px;
+		font-size: 1.1rem;
+	}
+	.input::placeholder {
+		font-size: 1rem;
+	}
+	.show {
+		height: 50px;
+		font-size: 0.9rem;
+	}
+	.placeholder {
+		left: 8%;
+		top: 29.5%;
+		font-size: 0.95rem;
+	}
+
+	.placeholder.active {
+		left: 6.8%;
+		top: -5.5%;
+		font-size: 0.8rem;
+	}
+}

@@ -1,0 +1,101 @@
+.notFound {
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0.1)
+		),
+		url("../../../assets/images/not-found.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: white;
+}
+
+.notFound-header {
+	padding-block: 1rem;
+	background-color: #121820;
+}
+
+.notFound-main {
+	position: relative;
+	height: calc(80%);
+}
+
+.notfound-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex-direction: column;
+	gap: 1.4rem;
+	text-align: center;
+}
+
+.notfound-container > h2 {
+	font-size: 2.5rem;
+}
+
+.notfound-container > p:nth-of-type(1) {
+	font-size: 1.2rem;
+	width: 80%;
+	font-weight: 400;
+	line-height: 1.75;
+}
+
+.home-link {
+	padding: 0.6rem 1rem;
+	transition: all 0.2s ease-in-out;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.home-link:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.error {
+	font-weight: 300;
+	border-left: 1.5px solid red;
+	padding: 0.7rem;
+}
+
+.error > span {
+	font-weight: bold;
+}
+
+.creator {
+	position: absolute;
+	right: 4%;
+	bottom: 2%;
+	font-size: 1.1rem;
+}
+
+.creator > span {
+	font-weight: 300;
+}
+
+@media (min-width: 950px) {
+	.notfound-container {
+		gap: 2rem;
+	}
+	.notfound-container > h2 {
+		font-size: 3.5rem;
+	}
+	.notfound-container > p:nth-of-type(1) {
+		font-size: 1.4rem;
+	}
+
+	.home-link {
+		padding: 1rem 1.4rem;
+		font-size: 1.3rem;
+	}
+	.error {
+		font-size: 1.6rem;
+	}
+	.creator {
+		font-size: 1.3rem;
+	}
+}

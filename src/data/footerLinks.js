@@ -1,0 +1,36 @@
+const footerLinks = {
+	english: [
+		"FAQ",
+		"Help Center",
+		"Account",
+		"Media Center",
+		"Investor Relations",
+		"Jobs",
+		"Redeem Gift Cards",
+		"Buy Gift Cards",
+		"Ways to Watch",
+		"Terms of Use",
+		"Privacy",
+		"Cookie Preferences",
+		"Legal Notices",
+		"Only on Netflix",
+	],
+	persian: [
+		"سوالات متداول",
+		"مرکز کمک",
+		"حساب",
+		"مرکز رسانه",
+		"روابط سرمایه گذار",
+		"شغل ها",
+		"بازخرید کارت های هدیه",
+		"خرید گیفت کارت",
+		"راه های تماشا",
+		"شرایط استفاده",
+		"حریم خصوصی",
+		"تنظیمات کوکی",
+		"اطلاعیه های حقوقی",
+		"فقط در نتفلیکس",
+	],
+};
+
+export default footerLinks;
